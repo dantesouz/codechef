@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
@@ -13,7 +12,7 @@ import Contato from './pages/Contato';
 
 function App() {
   return (
-    <Container fluid>
+    <Container fluid className='bg-dark text-white p-0 overflow-hidden'>
 
       <BrowserRouter>
         <Row>
@@ -40,7 +39,7 @@ function App() {
 
       <Row>
         {/* {Aqui vai o rodapé} */}
-        <Rodape></Rodape>
+        <Rodape/>
       </Row>
     </Container >
   );
